@@ -1,0 +1,99 @@
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #433566;
+}
+
+.card:hover {
+	transform: scale(1.1); 
+    transition: transform 1s; 
+}
+
+.custom-search-input {
+    width: 140px !important;
+}  
+
+.dropdown-menu a.dropdown-item:hover {
+	background-color: #433566;
+}
+
+.detail-item {
+	background-color: #cfcfcf;
+	padding-bottom: 4px; 
+	margin-bottom: 4px; 
+	font-size: 1.2rem;
+}  
+
+.detail-item2 {
+	background-color: #e4e4e4;
+	padding-bottom: 4px; 
+	margin-bottom: 4px; 
+	font-size: 1.2rem;
+}  
+
+body.modal-open {
+	overflow: hidden;
+}
+
+.btn-modal {
+	border: none;
+	background: none;
+	width: 40px;
+	border-radius: 50%; 
+	transition: .3s ease all;
+	font-size: 1.3rem;
+	position: relative ; 
+	top: 10px;
+	left: 96.5%;
+	z-index: 9999; 
+}
+
+.btn-modal:hover {
+	background: red;
+	color: white;
+}
+
+.btn-back {
+	margin-top: 20px; 
+	color: white;
+	background: #241744;
+	border-radius: 10%; 
+	transition: .3s ease all;
+	font-size: 1.3rem;
+	padding: 7px;
+}
+
+.btn-back:hover {
+	background-color: #433566; 
+}
+
+@media (max-width: 992px) {
+	.btn-modal {
+	  left: 93%; 
+	}
+}
