@@ -92,6 +92,13 @@ body.modal-open {
 	background-color: #433566; 
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button; 
+    opacity: 1; 
+    font-size: 1.3em; 
+	cursor: pointer;
+}
+
 @media (max-width: 992px) {
 	.btn-modal {
 	  left: 93%; 
