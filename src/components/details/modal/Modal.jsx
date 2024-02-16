@@ -21,7 +21,7 @@ const Modal = ({ movie, handleCloseModal }) => {
       <div className="modal-backdrop" style={{ backgroundColor: 'rgba(67, 53, 102, 0.8)', position: 'fixed', top: 0, left: 0, width: '100%', height: '100%' }}></div>
       <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
         <div className="modal-dialog modal-dialog-centered modal-xl" role="document">
-          <div className="modal-content p-3 pt-0" style={{ maxHeight: '90vh', overflowY: 'auto' }}>
+          <div className="modal-content p-3 pt-0" style={{ maxHeight: '90vh'}}>
             <ModalCloseButton handleCloseModal={handleCloseModal} />
             {movieData && movieDetailsExtended &&
               <ModalHeader movieData={movieData} movieDetailsExtended={movieDetailsExtended} movie={movie} />
