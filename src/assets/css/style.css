@@ -69,6 +69,7 @@ body.modal-open {
 	font-size: 1.3rem;
 	position: relative ; 
 	top: 10px;
+	left: 96.5%;
 }
 
 .btn-modal:hover {
@@ -103,4 +104,10 @@ body.modal-open {
 
 .btn-clear-search:hover {
 	color: red;
+}
+
+@media (max-width: 992px) {
+	.btn-modal {
+	  left: 93%; 
+	}
 }
