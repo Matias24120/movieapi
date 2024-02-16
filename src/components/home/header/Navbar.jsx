@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faTimes } from '@fortawesome/free-solid-svg-icons';
 import logo2 from '../../../assets/imgs/logo2.png';
 import Filter from './Filter';
 
@@ -33,18 +33,26 @@ const Navbar = ({ setSearchedMovies }) => {
         }
     };
 
+    const clearSearch = () => {
+        setSearchTerm('');
+        handleInputChange('');
+    };
+
     return (
-        <nav style={{backgroundColor: '#241744'}} className="navbar navbar-expand-lg mb-4">
+        <nav style={{ backgroundColor: '#241744' }} className="navbar navbar-expand-lg mb-4">
             <div className="container-fluid d-flex justify-content-between align-items-center">
                 <a className="navbar-brand" href="/">
                     <img src={logo2} height="40px" width="40px" alt="logo" />
                 </a>
-                <div className="d-flex align-items-center"> 
+                <div className="d-flex align-items-center">
                     <div className="input-group me-2">
                         <span className="input-group-text"><FontAwesomeIcon icon={faSearch} /></span>
-                        <input className="form-control custom-search-input" type="search" placeholder="Search" aria-label="Search" value={searchTerm} onChange={(e) => handleInputChange(e.target.value)} />
+                        <input className="form-control custom-search-input" type="text" placeholder="Search" aria-label="Search" value={searchTerm} onChange={(e) => handleInputChange(e.target.value)} />
+                        {searchTerm && (
+                            <button className="btn-clear-search" type="button" onClick={clearSearch}><FontAwesomeIcon icon={faTimes} /></button>
+                        )}
                     </div>
-                    <Filter /> 
+                    <Filter />
                 </div>
             </div>
         </nav>
