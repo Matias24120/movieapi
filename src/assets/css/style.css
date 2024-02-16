@@ -108,6 +108,6 @@ body.modal-open {
 
 @media (max-width: 992px) {
 	.btn-modal {
-	  left: 93%; 
+	    left: 45%; 
 	}
 }
