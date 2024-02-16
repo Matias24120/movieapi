@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ModalCloseButton from '../button/ModalCloseButton';
 import ModalHeader from '../header/ModalHeader';
 import ModalDetails from '../details/ModalDetails';
@@ -15,6 +15,14 @@ const Modal = ({ movie, handleCloseModal }) => {
   const crew = useMoviesFourthColumn(movie.id);
   const releaseDate = movieDetailsExtended ? new Date(movieDetailsExtended.releaseDate) : null;
   const formattedReleaseDate = releaseDate ? releaseDate.toISOString().split('T')[0] : '';
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   return (
     <div>
