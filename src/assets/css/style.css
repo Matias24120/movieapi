@@ -108,7 +108,10 @@ body.modal-open {
 }
 
 @media (max-width: 992px) {
-	.btn-modal {
-	  left: 91%; 
-	}
+    .btn-modal {
+        left: auto; 
+        right: 5px; 
+        top: 5px; 
+        transform: none; 
+    }
 }
