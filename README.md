@@ -1,6 +1,6 @@
 EN
 
-Informational site for movies obtained from The Movie Database API. It has functionalities to add to favorites, watchlist, mark as viewed, search engine and details of each one.
+Informational site for movies obtained from The Movie Database API. It has functionalities to add to favorites, watchlist, mark as viewed, search engine and details of each one. 
 Dependencies: React, React Router Dom, Bootstrap, FontAwesome, React Icons, React Spring and @testing-library. 
 Host: https://five-stars-api.vercel.app/
 
